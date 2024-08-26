@@ -1,0 +1,297 @@
+.action-button {
+  background-color: #000;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Montagu Slab", sans-serif;
+  font-size: 1em;
+  letter-spacing: 1px;
+  margin: 2px;
+  padding: 2px 5px;
+  transition: all 0.5s ease-in-out;
+  width: fit-content;
+
+  &.disabled {
+    cursor: default;
+    opacity: 0.5;
+  }
+}
+
+.container {
+  background-color: #e4e4e4;
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Montagu Slab", sans-serif;
+}
+
+.header {
+  margin-bottom: 15px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.header h1 {
+  margin-bottom: 5px;
+  padding-top: 10px;
+}
+
+.scoreboard {
+  border-radius: 5px;
+  display: flex;
+  float: left;
+  font-size: 1.6em;
+  font-weight: bold;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.scoreboard .score {
+  background-color: #fff;
+  color: #000;
+  height: 100%;
+  padding: 0 10px;
+  width: fit-content;
+}
+
+.scoreboard .team-1 .score {
+  float: right;
+}
+
+.scoreboard .team-2 .score {
+  float: left;
+}
+
+.tackle-count {
+  display: inline-flex;
+  font-size: 1em;
+  margin-bottom: 5px;
+  padding: 2px 5px;
+  transition: all 0.5s ease-in-out;
+  width: fit-content;
+}
+
+.timer {
+  background-color: #000;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-flex;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+  padding: 2px 5px;
+  transition: all 0.5s ease-in-out;
+  width: fit-content;
+}
+
+.scoreboard div {
+  border-radius: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  flex: 1;
+  height: 100%;
+  margin: 1px;
+  padding: 10px;
+  text-align: center;
+}
+
+.button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.live-commentary {
+  border-radius: 5px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  display: inline-block;
+  margin: 1px;
+  min-width: 620px;
+  padding: 10px;
+  text-align: center;
+  width: fit-content;
+}
+
+.pitch-radar {
+  background-color: green;
+  height: 160px;
+  margin: auto;
+  position: relative;
+  width: 640px;
+}
+
+.pitch-radar .pitch-radar-ball {
+  background-color: #fff;
+  border-radius: 10px;
+  height: 10px;
+  position: absolute;
+  transition: left 2s 0s, top 2s 0s;
+  width: 10px;
+}
+
+.pitch-radar .pitch-radar-line {
+  border-left: 1px solid #fff;
+  position: absolute;
+}
+
+.pitch-radar .pitch-radar-line.half-way {
+  height: 140px;
+  left: 320px;
+  top: 10px;
+}
+
+.pitch-radar .pitch-radar-line.ingoal-left {
+  height: 140px;
+  left: 10px;
+  top: 10px;
+}
+
+.pitch-radar .pitch-radar-line.ingoal-right {
+  height: 140px;
+  right: 10px;
+  top: 10px;
+}
+
+.pitch-radar .pitch-radar-line.tryline-left {
+  height: 140px;
+  left: 60px;
+  top: 10px;
+}
+
+.pitch-radar .pitch-radar-line.tryline-right {
+  height: 140px;
+  right: 60px;
+  top: 10px;
+}
+
+.pitch-radar .pitch-radar-line.tenline-left {
+  height: 140px;
+  left: 110px;
+  top: 10px;
+}
+
+.pitch-radar .pitch-radar-line.tenline-right {
+  height: 140px;
+  right: 110px;
+  top: 10px;
+}
+
+.pitch-radar .pitch-radar-line.twentyline-left {
+  height: 140px;
+  left: 160px;
+  top: 10px;
+}
+
+.pitch-radar .pitch-radar-line.twentyline-right {
+  height: 140px;
+  right: 160px;
+  top: 10px;
+}
+
+.pitch-radar .pitch-radar-line.thirtyline-left {
+  height: 140px;
+  left: 210px;
+  top: 10px;
+}
+
+.pitch-radar .pitch-radar-line.thirtyline-right {
+  height: 140px;
+  right: 210px;
+  top: 10px;
+}
+
+.pitch-radar .pitch-radar-line.fortyline-left {
+  border-left: 1px dashed #fff;
+  height: 140px;
+  left: 260px;
+  top: 10px;
+}
+
+.pitch-radar .pitch-radar-line.fortyline-right {
+  border-left: 1px dashed #fff;
+  height: 140px;
+  right: 260px;
+  top: 10px;
+}
+
+.pitch-radar .pitch-radar-line.touchline-bottom {
+  border-bottom: 1px solid #fff;
+  bottom: 10px;
+  height: 1px;
+  left: 10px;
+  width: 619px;
+}
+
+.pitch-radar .pitch-radar-line.touchline-top {
+  border-top: 1px solid #fff;
+  height: 1px;
+  left: 10px;
+  top: 10px;
+  width: 619px;
+}
+
+.team-column {
+  font-family: "Work Sans", sans-serif;
+}
+
+.team-column p.interchange {
+  opacity: 0.6;
+}
+
+.team-column,
+.commentary-column {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  flex: 1;
+  font-family: "Work Sans", sans-serif;
+  margin: 10px;
+  padding: 10px;
+}
+
+.team-column h3,
+.commentary-column h3 {
+  text-align: center;
+}
+
+.team-column p,
+.commentary-column p {
+  margin: 5px 0;
+  transform: translateX(0);
+  transition: top 1s 0s;
+}
+
+/* Media Rules */
+@media screen and (max-width: 576px) {
+  .header h1 {
+    font-size: 22px;
+  }
+
+  .scoreboard {
+    display: block;
+    font-size: 1.2em;
+    padding: 5px 0;
+  }
+
+  .scoreboard .score {
+    padding: 0 5px;
+  }
+
+  .scoreboard .team-2 .score {
+    float: right;
+  }
+}
